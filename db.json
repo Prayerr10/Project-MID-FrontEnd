@@ -1,13 +1,109 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+  "biodata": {
+    "nama_lengkap": "Kaawoan, Prayer Yosua Immanuel",
+    "tempat_lahir": "Tempang",
+    "tanggal_lahir": "24 September 2006",
+    "jenis_kelamin": "Laki-laki",
+    "alamat": "Jaga II, Tempang, Langowan Utara, Minahasa, Sulawesi Utara",
+    "no_hp": "0821-9074-4474",
+    "email": "12410519@student.unklab.ac.id",
+    "status": "Mahasiswa Aktif",
+    "pendidikan": {
+      "perguruan_tinggi": "Universitas Klabat",
+      "fakultas": "Fakultas Ilmu Komputer",
+      "program_studi": "Informatika",
+      "no_reg": "12410519",
+      "nim": "1022410099",
+      "semester": "3"
+    }
+  },
+  "keahlian": [
+    {
+      "id": 1,
+      "kategori": "Technical Skills",
+      "items": ["Pemrograman Python", "JavaScript", "HTML/CSS"]
+    },
+    {
+      "id": 2,
+      "kategori": "Soft Skills",
+      "items": ["Microsoft Word", "Public Speaking", "Teamwork"]
+    },
+    {
+      "id": 3,
+      "kategori": "Tools",
+      "items": ["Visual Studio Code", "Git", "Canva"]
+    }
   ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  "organisasi": [
+    {
+      "id": 1,
+      "posisi": "Anggota Himpunan Mahasiswa Informatika",
+      "periode": "2024–2025",
+      "deskripsi": "Aktif dalam kegiatan organisasi mahasiswa program studi"
+    },
+    {
+      "id": 2,
+      "posisi": "Peserta Magang di PT ABC",
+      "periode": "Juni 2024 - Agustus 2024",
+      "deskripsi": "Magang sebagai Data Analyst"
+    }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "hobi": [
+    {
+      "id": 1,
+      "nama": "Mandi"
+    },
+    {
+      "id": 2,
+      "nama": "Makan"
+    },
+    {
+      "id": 3,
+      "nama": "Healing"
+    },
+    {
+      "id": 4,
+      "nama": "Tidur"
+    }
+  ],
+  "generations": [
+    {
+      "id": 1,
+      "semester": "1",
+      "tahun_akademik": "2024/2025 Ganjil",
+      "mata_kuliah": ["Computer Programming", "Aljabar", "ITC"],
+      "ipk": "3.50",
+      "keterangan": "Semester Awal Perkuliahan"
+    },
+    {
+      "id": 2,
+      "semester": "2",
+      "tahun_akademik": "2024/2025 Genap",
+      "mata_kuliah": ["Struktur Data", "Logika Informatika", "Kalkulus"],
+      "ipk": "3.65",
+      "keterangan": "Masih sedikit Tugas"
+    },
+    {
+      "id": 3,
+      "semester": "3",
+      "tahun_akademik": "2025/2026 Ganjil",
+      "mata_kuliah": ["FrontEnd", "Basis Data", "System Analisis Dan Design"],
+      "ipk": "3.70",
+      "keterangan": "Semakin banyak project"
+    }
+  ],
+  "evolution": [
+    {
+      "id": 1,
+      "tahun": "2024",
+      "pencapaian": "Mahasiswa Baru",
+      "deskripsi": "Memulai perkuliahan di Universitas Klabat"
+    },
+    {
+      "id": 2,
+      "tahun": "2025",
+      "pencapaian": "Belajar Pemrograman Dasar",
+      "deskripsi": "Menguasai programming dan algoritma"
+    }
+  ]
 }
