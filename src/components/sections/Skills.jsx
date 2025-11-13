@@ -25,7 +25,6 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-green-50 rounded-full px-6 py-3 mb-4">
             <span className="text-green-600">⚡</span>
@@ -34,16 +33,11 @@ const Skills = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Skills & Kemampuan
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Kumpulan kemampuan teknis dan soft skills yang terus dikembangkan
-          </p>
         </div>
 
-        {/* Skills Grid */}
         <div className="max-w-6xl mx-auto space-y-8">
           {biodata.keahlian.map((kategori) => (
             <div key={kategori.id} className="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-md transition-shadow duration-300">
-              {/* Category Header */}
               <div className="flex items-center space-x-4 mb-8">
                 <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center">
                   <span className="text-2xl">{categoryIcons[kategori.kategori]}</span>
@@ -54,7 +48,6 @@ const Skills = () => {
                 </div>
               </div>
 
-              {/* Skills List */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {kategori.items.map((skill, index) => (
                   <div
@@ -72,7 +65,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skills Summary */}
         <div className="max-w-4xl mx-auto mt-12">
           <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

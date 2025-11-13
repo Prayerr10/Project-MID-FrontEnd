@@ -19,7 +19,6 @@ const Generations = () => {
   return (
     <section id="generations" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-blue-50 rounded-full px-6 py-3 mb-4">
             <span className="text-blue-600">📚</span>
@@ -28,12 +27,8 @@ const Generations = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Perkembangan Akademik
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Progress pembelajaran selama {biodata.generations.length} semester
-          </p>
         </div>
 
-        {/* Semester Cards */}
         <div className="max-w-4xl mx-auto grid gap-6">
           {biodata.generations.map((semester) => (
             <div key={semester.id} className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-shadow duration-300">
@@ -70,7 +65,6 @@ const Generations = () => {
           ))}
         </div>
 
-        {/* Current Status */}
         <div className="max-w-4xl mx-auto mt-12">
           <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200 text-center">
             <h3 className="text-xl font-bold text-gray-900 mb-2">Status Saat Ini</h3>

@@ -26,7 +26,6 @@ const Hobbies = () => {
   return (
     <section id="hobbies" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-purple-50 rounded-full px-6 py-3 mb-4">
             <span className="text-purple-600">❤️</span>
@@ -35,12 +34,8 @@ const Hobbies = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Aktivitas Favorit
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Hal-hal yang saya nikmati di waktu luang untuk menjaga keseimbangan hidup
-          </p>
         </div>
 
-        {/* Hobbies Grid */}
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {biodata.hobi.map((hobby) => (
@@ -59,7 +54,6 @@ const Hobbies = () => {
           </div>
         </div>
 
-        {/* Life Balance Note */}
         <div className="max-w-2xl mx-auto mt-12 text-center">
           <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
             <p className="text-gray-600 font-medium">
