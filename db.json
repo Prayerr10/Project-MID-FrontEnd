@@ -72,7 +72,7 @@
       "semester": "1",
       "tahun_akademik": "2024/2025 Ganjil",
       "mata_kuliah": ["Computer Programming", "Aljabar", "ITC"],
-      "ipk": "3.50",
+      "ipk": "3.79",
       "keterangan": "Semester Awal Perkuliahan"
     },
     {
@@ -80,17 +80,10 @@
       "semester": "2",
       "tahun_akademik": "2024/2025 Genap",
       "mata_kuliah": ["Struktur Data", "Logika Informatika", "Kalkulus"],
-      "ipk": "3.65",
+      "ipk": "3.91",
       "keterangan": "Masih sedikit Tugas"
-    },
-    {
-      "id": 3,
-      "semester": "3",
-      "tahun_akademik": "2025/2026 Ganjil",
-      "mata_kuliah": ["FrontEnd", "Basis Data", "System Analisis Dan Design"],
-      "ipk": "3.70",
-      "keterangan": "Semakin banyak project"
     }
+    
   ],
   "evolution": [
     {

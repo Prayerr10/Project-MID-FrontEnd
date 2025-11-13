@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -9,44 +20,54 @@ const Header = () => {
     { id: 'home', label: 'Home' },
     { id: 'education', label: 'Pendidikan' },
     { id: 'skills', label: 'Keahlian' },
-    { id: 'organization', label: 'Organisasi' },
     { id: 'hobbies', label: 'Hobi' },
     { id: 'generations', label: 'Semester' },
-    { id: 'evolution', label: 'Perkembangan' }
+    { id: 'evolution', label: 'Akademik' }
   ];
 
   return (
-    <header className="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-          {/* Logo dengan Foto */}
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-200' 
+        : 'bg-white'
+    }`}>
+      <div className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo dengan Foto Header */}
           <div 
             className="flex items-center space-x-3 cursor-pointer"
             onClick={() => scrollToSection('home')}
           >
             <img 
-              src="/profile.jpg" 
+              src="/profile-header.jpg" 
               alt="Prayer Yosua" 
-              className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-md"
+              className="w-10 h-10 rounded-lg object-cover border border-gray-300"
             />
-            <div className="text-left">
-              <h1 className="text-xl font-bold tracking-tight">Prayer Yosua</h1>
-              <p className="text-blue-200 text-sm">UNKLAB Informatics</p>
+            <div>
+              <h1 className="font-semibold text-gray-900">Kaawoan, Prayer Yosua Immanuel</h1>
+              <p className="text-sm text-gray-500">Universitas Klabat</p>
             </div>
           </div>
           
           {/* Navigation */}
-          <nav className="flex flex-wrap justify-center gap-2">
+          <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="hover:text-blue-200 transition duration-300 font-medium px-3 py-2 rounded-lg hover:bg-blue-700 text-sm whitespace-nowrap"
+                className="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200"
               >
                 {item.label}
               </button>
             ))}
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button className="md:hidden text-gray-600">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
     </header>
